@@ -182,7 +182,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-		$exitCode = Execute-MSI -Action "Uninstall" -Path "$dirFiles\Teacher.msi" -AddParameters '/QN' 
+		$exitCode = Execute-MSI -Action "Uninstall" -Path "$dirFiles\Teacher.msi" -AddParameters '/QN'
 		If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
 
 
@@ -227,7 +227,7 @@ Try {
 		## <Perform Post-Repair tasks here>
 
 
-    }
+	}
 	##*===============================================
 	##* END SCRIPT BODY
 	##*===============================================
